@@ -1,27 +1,24 @@
 # Orlando FL Dodge Ball Website
 
-A responsive static website built with plain HTML, CSS, and JavaScript.
+Responsive GitHub Pages team website built with HTML, CSS and JavaScript.
 
-## Sections
-- Team Hub
-- Standings & Leaderboard
-- Merchandise Shop
-- Media & Content Hub
-- Tour Schedule & Tickets
+## Navigation
+Team Hub | Players | Standings | Schedule | Media | Shop
 
-## GitHub Pages
-1. Create a new GitHub repository.
-2. Upload `index.html`, `styles.css`, `script.js`, and `README.md` to the repository root.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select your main branch and `/ (root)`.
-6. Save.
+## Features
+- Interactive placeholder player profiles and detailed stats
+- Search, role filtering and A–Z/Z–A/home/away/eliminations/accuracy sorting
+- Live Orlando weather via Open-Meteo
+- Recent results, upcoming matchup and match countdown
+- Team statistics and records
+- Clickable opponent profiles
+- Latest-video-by-date media area
+- Team news and fan Player of the Match voting
+- List/calendar schedule views
+- Automatic live-match banner during scheduled game windows
+- 2025/2026 season selector
+- Created by Rocky 🐾 footer
 
-No build tools or dependencies are required.
+Most placeholder content is stored in `script.js` so real players, schedules, videos and team data can be substituted later.
 
-## Customize
-- Replace placeholder roster names in `index.html`.
-- Replace sample standings and tour stops in `script.js`.
-- Add real store links to merchandise buttons.
-- Replace the ticket placeholder with your official ticket URL.
-- Add embedded video or social content later if desired.
+No build step is required for GitHub Pages.
