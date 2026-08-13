@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orlando FL Dodge Ball</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">ORLANDO, FL</p>
+        <h1>DODGE BALL</h1>
+      </div>
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    </header>
+
+    <nav class="tabs" id="tabs" aria-label="Main navigation">
+      <button class="tab active" data-tab="team">Team Hub</button>
+      <button class="tab" data-tab="standings">Standings & Leaderboard</button>
+      <button class="tab" data-tab="merch">Merchandise Shop</button>
+      <button class="tab" data-tab="media">Media & Content Hub</button>
+      <button class="tab" data-tab="tour">Tour Schedule & Tickets</button>
+    </nav>
+
+    <main>
+      <section class="panel active" id="team">
+        <div class="hero-row">
+          <div>
+            <p class="eyebrow">TEAM PROFILE</p>
+            <h2>Team Hub</h2>
+            <p class="lead">The home base for Orlando FL Dodge Ball. Add your official crest, finalized lore, roster, player roles, and gameplay identity here when they are ready.</p>
+          </div>
+          <div class="status-chip">Roster details coming soon</div>
+        </div>
+
+        <div class="grid two">
+          <article class="card">
+            <h3>Team Lore</h3>
+            <p>Orlando FL Dodge Ball brings fast-paced energy, competitive intensity, and a crowd-first identity to every match. This section is ready for the official team story once finalized.</p>
+          </article>
+          <article class="card">
+            <h3>Gameplay Traits</h3>
+            <div class="trait"><span>⚡</span><div><strong>Fast-Paced Offense</strong><p>Pressure early. Move quickly. Keep opponents reacting.</p></div></div>
+            <div class="trait"><span>🛡️</span><div><strong>Strong Defensive Shape</strong><p>Disciplined movement and quick recovery.</p></div></div>
+            <div class="trait"><span>🎯</span><div><strong>Adapt & Overcome</strong><p>Adjust strategy in real time.</p></div></div>
+          </article>
+        </div>
+
+        <article class="card">
+          <div class="section-heading">
+            <h3>Roster Preview</h3>
+            <span class="muted">Placeholder names only</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>#</th><th>Player</th><th>Character Role</th><th>Status</th></tr></thead>
+              <tbody>
+                <tr><td>01</td><td>Player One</td><td>Captain</td><td><span class="badge">TBD</span></td></tr>
+                <tr><td>02</td><td>Player Two</td><td>Sniper</td><td><span class="badge">TBD</span></td></tr>
+                <tr><td>03</td><td>Player Three</td><td>Defender</td><td><span class="badge">TBD</span></td></tr>
+                <tr><td>04</td><td>Player Four</td><td>All-Rounder</td><td><span class="badge">TBD</span></td></tr>
+                <tr><td>05</td><td>Player Five</td><td>Strategist</td><td><span class="badge">TBD</span></td></tr>
+                <tr><td>06</td><td>Player Six</td><td>Utility</td><td><span class="badge">TBD</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+
+      <section class="panel" id="standings">
+        <div class="hero-row"><div><p class="eyebrow">COMPETITION</p><h2>Standings & Leaderboard</h2><p class="lead">Regional conference standings, fan heat, and the road to the Big Game.</p></div></div>
+        <div class="grid two">
+          <article class="card">
+            <h3>Regional Conference</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Rank</th><th>Team</th><th>W</th><th>L</th><th>PCT</th></tr></thead>
+                <tbody id="standingsBody"></tbody>
+              </table>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Fan Heat Meter</h3>
+            <div class="heat-number"><span id="heatValue">92</span>°</div>
+            <div class="progress"><span id="heatBar" style="width:92%"></span></div>
+            <label for="heatRange">Preview fan heat</label>
+            <input id="heatRange" type="range" min="0" max="100" value="92" />
+            <p class="muted">Interactive demo — connect this later to real data.</p>
+          </article>
+        </div>
+        <article class="card">
+          <h3>Tournament Ladder</h3>
+          <div class="ladder">
+            <div><span>Round 1</span><strong>Play-In</strong></div>
+            <div><span>Round 2</span><strong>Regionals</strong></div>
+            <div><span>Semifinals</span><strong>Elite 4</strong></div>
+            <div class="highlight"><span>Finals</span><strong>The Big Game</strong></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="panel" id="merch">
+        <div class="hero-row"><div><p class="eyebrow">SHOP</p><h2>Merchandise Shop</h2><p class="lead">Look-book style apparel drops, faction lifestyle gear, and custom team clothing.</p></div></div>
+        <div class="shop-grid">
+          <article class="product-card"><div class="product-art">HOODIE</div><h3>Orlando Team Hoodie</h3><p>Heavyweight black hoodie with team wordmark placement.</p><button class="primary buy-btn">View Item</button></article>
+          <article class="product-card"><div class="product-art">TEE</div><h3>Faction Tee</h3><p>Minimal team lifestyle shirt for match weekends and everyday wear.</p><button class="primary buy-btn">View Item</button></article>
+          <article class="product-card"><div class="product-art">CAP</div><h3>Team Snapback</h3><p>Structured black cap with red accent embroidery placeholder.</p><button class="primary buy-btn">View Item</button></article>
+        </div>
+        <div id="shopMessage" class="notice" aria-live="polite"></div>
+      </section>
+
+      <section class="panel" id="media">
+        <div class="hero-row"><div><p class="eyebrow">WATCH</p><h2>Media & Content Hub</h2><p class="lead">Short-form highlights, walkouts, promos, trash talk, and viral social clips.</p></div></div>
+        <div class="grid two">
+          <article class="card media-feature">
+            <div class="video-placeholder"><button id="playFeature" class="play">▶</button></div>
+            <h3>Game Day Walkout</h3>
+            <p>Feature your newest walkout, hype reel, or headline clip here.</p>
+          </article>
+          <article class="card">
+            <h3>Content Filters</h3>
+            <div class="filter-row">
+              <button class="filter active" data-filter="all">All</button>
+              <button class="filter" data-filter="highlight">Highlights</button>
+              <button class="filter" data-filter="promo">Promos</button>
+              <button class="filter" data-filter="social">Social</button>
+            </div>
+            <div id="clips" class="clips"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="tour">
+        <div class="hero-row"><div><p class="eyebrow">LIVE CIRCUIT</p><h2>Tour Schedule & Tickets</h2><p class="lead">Weekend matchups, circuit stops, and direct ticket links.</p></div></div>
+        <div class="grid two">
+          <article class="card">
+            <h3>Tour Stops</h3>
+            <div id="tourList" class="tour-list"></div>
+          </article>
+          <article class="card">
+            <h3>Next Matchup</h3>
+            <div class="matchup">
+              <div><span>ORLANDO FL</span><strong>DODGE BALL</strong></div>
+              <b>VS</b>
+              <div><span>TAMPA BAY</span><strong>THUNDER</strong></div>
+            </div>
+            <p class="center muted">Date and venue are placeholders until the live circuit is confirmed.</p>
+            <a class="primary ticket-link" href="#" id="ticketLink">Get Tickets</a>
+            <div id="ticketMessage" class="notice" aria-live="polite"></div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> Orlando FL Dodge Ball</span>
+      <span>Static GitHub-ready preview</span>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
